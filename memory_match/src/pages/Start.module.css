@@ -11,7 +11,7 @@
   background-size: cover;
 }
 
-.blueCard {
+/*.blueCard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -32,4 +32,37 @@
 
 .flipped {
   transform: rotateY(180deg);
+} */
+
+.memoryGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+
+.info {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20%;
+  left: 80%;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  padding: 5px;
 }
